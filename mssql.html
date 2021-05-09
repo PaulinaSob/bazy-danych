@@ -114,11 +114,74 @@
 </head>
 <body>
     <div id="container">
-<nav><p id="tytul">Test 1</p></nav>
+<nav><p id="tytul">MSSQL</p></nav>
 <div id="powrot"><a href="glowna.html">Na stronę główną</a></div>
 <main>
-    <div class="zadanie">Zadanie 1</div><br>
-    
+<p id="info">Test składa się z 8 pytań</p><br>
+    <div class="zadanie"><b>Pytanie 1</b><br><hr>
+        <p>Poziom izolacji transakcji Repeatable Read (tryb powtarzalnego odczytu) stosowany przez MS SQL wiąże się z problemem</p>
+         <input type="checkbox" id="A1">A. odczytów widm</input> <br>
+         <input type="checkbox" id="B1">B. utraty aktualizacji</input>   <br>
+         <input type="checkbox" id="C1">C. brudnych odczytów</input>  <br> 
+         <input type="checkbox" id="D1">D. niepowtarzalnych odczytów</input> <br> 
+         <div id="guzik"><button id="sprawdz1">Sprawdź odpowiedź</button></div>
+    </div> 
+    <div class="zadanie"><b>Pytanie 2</b><br><hr>
+        <p>Aby przywrócić bazę danych z kopii bezpieczeństwa na serwerze MSSQL, należy posłużyć się poleceniem</p>
+         <input type="checkbox" id="A2">A. EXPORT DATABASE</input> <br>
+         <input type="checkbox" id="B2">B. BACKUP DATABASE</input>   <br>
+         <input type="checkbox" id="C2">C. RESTORE DATABASE</input>  <br> 
+         <input type="checkbox" id="D2">D. UNBACKUP DATABASE</input> <br> 
+         <div id="guzik"><button id="sprawdz2">Sprawdź odpowiedź</button></div>
+    </div>   
+    <div class="zadanie"><b>Pytanie 3</b><br><hr>
+        <p>Aby przywrócić bazę danych MS SQL z kopii bezpieczeństwa, należy zastosować polecenie</p>
+         <input type="checkbox" id="A3">A. DBCC CHECKDB</input> <br>
+         <input type="checkbox" id="B3">B. SAVE DATABASE</input>   <br>
+         <input type="checkbox" id="C3">C. RESTORE DATABASE</input>  <br> 
+         <input type="checkbox" id="D3">D. REBACKUP DATABASE</input> <br> 
+         <div id="guzik"><button id="sprawdz3">Sprawdź odpowiedź</button></div>
+    </div>  
+    <div class="zadanie"><b>Pytanie 4</b><br><hr>
+        <p>W MS SQL Serwer polecenie RESTORE DATABASE służy do</p>
+         <input type="checkbox" id="A4">A. odtwarzania bazy danych z kopi bezpieczeństwa</input> <br>
+         <input type="checkbox" id="B4">B. odświeżenia bazy danych z kontrolą więzów integralności</input>   <br>
+         <input type="checkbox" id="C4">C. przebudowania bazy danych w oparciu o buforowane dane</input>  <br> 
+         <input type="checkbox" id="D4">D. usunięcia bazy danych z serwera centralnego subskrybenta</input> <br> 
+         <div id="guzik"><button id="sprawdz4">Sprawdź odpowiedź</button></div>
+    </div> 
+    <div class="zadanie"><b>Pytanie 5</b><br><hr>
+        <p>W MS SQL Serwer predefiniowana rola o nazwie dbcreator pozwala użytkownikowi na</p>
+         <input type="checkbox" id="A5">A. zarządzanie plikami na dysku </input> <br>
+         <input type="checkbox" id="B5">B. tworzenie, modyfikowanie, usuwanie i odzyskiwanie bazy danych</input>   <br>
+         <input type="checkbox" id="C5">C. przebudowania bazy danych w oparciu o buforowane dane</input>  <br> 
+         <input type="checkbox" id="D5">D. wykorzystanie każdej operacji na serwerze i posiadanie prawa własności każdej bazy</input> <br> 
+         <div id="guzik"><button id="sprawdz5">Sprawdź odpowiedź</button></div>
+    </div> 
+    <div class="zadanie"><b>Pytanie 6</b><br><hr>
+        <p>Za pomocą polecenia BACKUP LOP w MS SQL Serwer można</p>
+         <input type="checkbox" id="A6">A. wykonać pełną kopię bezpieczeństwa</input> <br>
+         <input type="checkbox" id="B6">B. zalogować się do kopii bezpieczeństwa</input>   <br>
+         <input type="checkbox" id="C6">C. wykonać kopię bezpieczeństwa dziennika transakcyjnego</input>  <br> 
+         <input type="checkbox" id="D6">D. przeczytać komunikaty wygenerowane podczas tworzenia kopii</input> <br> 
+         <div id="guzik"><button id="sprawdz6">Sprawdź odpowiedź</button></div>
+    </div> 
+    <div class="zadanie"><b>Pytanie 7</b><br><hr>
+        <p>Polecenie DBCC CHECKDB('sklepAGD',Repair_fast) w MS SQL Serwer</p>
+         <input type="checkbox" id="A7">A. sprawdzi spójność określonej tabeli</input> <br>
+         <input type="checkbox" id="B7">B. sprawdzi spójność bazy danych i naprawi uszkodzone indeksy</input>   <br>
+         <input type="checkbox" id="C7">C. sprawdzi spójność bazy danych i wykona kopię bezpieczeństwa</input>  <br> 
+         <input type="checkbox" id="D7">D. sprawdzi spójność określonej tabeli i naprawi uszkodzone rekordy</input> <br> 
+         <div id="guzik"><button id="sprawdz7">Sprawdź odpowiedź</button></div>
+    </div> 
+    <div class="zadanie"><b>Pytanie 8</b><br><hr>
+        <p>Jakie należy posiadać uprawnienia, aby wykonać i odtworzyć kopię zapasową bazy danych Microsoft SQL serwer 2005 Express?</p>
+         <input type="checkbox" id="A8">A. users</input> <br>
+         <input type="checkbox" id="B8">B. security users</input>   <br>
+         <input type="checkbox" id="C8">C. użytkownik lokalny</input>  <br> 
+         <input type="checkbox" id="D8">D. administrator systemu</input> <br> 
+         <div id="guzik"><button id="sprawdz8">Sprawdź odpowiedź</button></div>
+    </div> 
 </main>
 <div id="powrot"><a href="glowna.html">Na stronę główną</a></div>
 <footer><p id="podpis">Autorzy:<br>Paulina Sobocka kl.3B<br>Amelia Wojtasik kl.3B</p></footer>
