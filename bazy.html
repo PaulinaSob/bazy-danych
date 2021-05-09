@@ -6,81 +6,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baza pytań</title>
     <style>
-         *{
-            margin:0;
-            padding:0;
-            box-sizing: border-box;
-            font-family:cursive;
-        }
-        html{
-            background-image:url("tło.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        #container{
-            display:flex;
-            flex-direction: column;
-            justify-content:space-between;
-            align-content: center;
-            min-height: 100vh;
-        }
-        nav{
-            background-color:rgba(0,0,0,0.6);
-            text-align: center;
-            font-size:50px;
-            margin:1%;
-            color:rgb(233, 237, 245);
-        }
-        main{
-            background-color:rgba(0,0,0,0.6);
-            margin-top:3%;
-            margin-bottom:3%;
-            margin-left: 20%;
-            margin-right:20%;
-            font-size:30px;
-            text-align: center;
-            color:rgb(233, 237, 245);
-            flex-grow: 2;
-        }
-        main a{
-            text-decoration:none;
-            color:rgb(233, 237, 245);
-        }
-        footer{
-            background-color:rgba(0,0,0,0.6);
-            position:sticky;
-            top:100%;
-            font-size:20px;
-            margin:1%;
-            color:rgb(233, 237, 245);
-        }
-        footer #podpis{
-            text-align:right;
-            padding-right:5%;
-        }
-        #powrot{
-            background-color:rgba(233, 237, 245,0.6);
-            margin-top:3%;
-            margin-bottom:3%;
-            margin-left: 40%;
-            margin-right:40%;
-            font-size:30px;
-            text-align: center;
-            border-radius: 3vw;
-        }
-        #powrot a{
-            text-decoration:none;
-            color:rgb(53, 55, 59);
-        }
-
-    </style>
+        *{
+             margin:0;
+             padding:0;
+             box-sizing: border-box;
+             font-family:cursive;
+         }
+         html{
+             background-image:url("tło.jpg");
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-attachment: fixed;
+         }
+         #container{
+             display:flex;
+             flex-direction: column;
+             justify-content:space-between;
+             align-content: center;
+             min-height: 100vh;
+         }
+         nav{
+             background-color:rgba(0,0,0,0.6);
+             text-align: center;
+             font-size:50px;
+             margin:1%;
+             color:rgb(233, 237, 245);
+         }
+         main{
+             background-color:rgba(0,0,0,0.6);
+             margin-top:3%;
+             margin-bottom:3%;
+             margin-left: 20%;
+             margin-right:20%;
+             font-size:20px;
+             color:rgb(233, 237, 245);
+             flex-grow: 2;
+         }
+         #info{
+             text-align: center;
+         }
+         main a{
+             text-decoration:none;
+             color:rgb(233, 237, 245);
+         }
+         footer{
+             background-color:rgba(0,0,0,0.6);
+             position:sticky;
+             top:100%;
+             font-size:20px;
+             margin:1%;
+             color:rgb(233, 237, 245);
+         }
+         footer #podpis{
+             text-align:right;
+             padding-right:5%;
+         }
+         #powrot{
+             background-color:rgba(0,0,0,0.6);
+             margin-top:3%;
+             margin-bottom:3%;
+             margin-left: 40%;
+             margin-right:40%;
+             font-size:30px;
+             text-align: center;
+             border-radius: 3vw;
+         }
+         #powrot a{
+             text-decoration:none;
+             color:rgb(233, 237, 245);
+         }
+         .zadanie{
+             background-color:rgba(233, 237, 245,0.6);
+             margin:2%;
+             color:rgb(24, 25, 28)
+         }
+         .zadanie p,b,input{
+             margin-left:10px;
+             margin-right:10px;
+         }
+         .zadanie hr{
+             margin-left:2px;
+             margin-right:2px;
+         }
+         #guzik{
+             display: flex;
+             justify-content: center;
+             padding:2%;
+         }
+         #img{
+             display: flex;
+             justify-content: center;
+             padding:2%;
+         }
+         button{
+             background-color:rgba(0,0,0,0.6);
+             margin-top:3%;
+             margin-bottom:3%;
+             margin-left: 35%;
+             margin-right:35%;
+             font-size:25px;
+             padding: 5px;
+             text-align: center;
+             border-radius: 3vw;
+             color:rgb(233, 237, 245);
+         }
+     </style>
 </head>
 <body>
     <div id="container">
-<nav><p id="tytul">Test 1</p></nav>
+<nav><p id="tytul">Bazy</p></nav>
+<div id="powrot"><a href="glowna.html">Na stronę główną</a></div>
 <main>
-    <div class="zadanie">Zadanie 1</div><br>
+<p id="info">Test składa się z 37 pytań</p><br>
+<div class="zadanie"><b>Pytanie 1</b><br><hr>
+    <p>W bazach danych relacja wiele-do-wielu pomiędzy tabelami występuje, gdy</p>
+     <input type="checkbox" id="A1">A. wielu wierszom tabeli A przypada wiele wierszy tabeli B</input> <br>
+     <input type="checkbox" id="B1">B. wielu wierszom z tabeli A przypada tylko jeden wiersz tabeli B</input>   <br>
+     <input type="checkbox" id="C1">C. jednemu wierszowi z tabeli A może odpowiadać wiele wierszy w tabeli B</input>  <br> 
+     <input type="checkbox" id="D1">D. jednemu wierszowi z tabeli A może odpowiadać wyłącznie jeden wiersz w tabeli B</input> <br> 
+     <div id="guzik"><button id="sprawdz1">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 2</b><br><hr>
+    <p>Którą integralność opisuje cytowana definicja?</p>
+    <div id="img"><img src="bazy3.png" width="90%"></div>
+     <input type="checkbox" id="A2">A. encji</input> <br>
+     <input type="checkbox" id="B2">B. statyczną</input>   <br>
+     <input type="checkbox" id="C2">C. referencyjną</input>  <br> 
+     <input type="checkbox" id="D2">D. semantyczną</input> <br> 
+     <div id="guzik"><button id="sprawdz2">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 3</b><br><hr>
+    <p>Przedstawiony zapis bazy danych składający się z dwóch tabel określa typ relacji</p>
+    <div id="img"><img src="bazy4.png"></div>
+     <input type="checkbox" id="A3">A. jeden do jednego</input> <br>
+     <input type="checkbox" id="B3">B. jeden do wielu</input>   <br>
+     <input type="checkbox" id="C3">C. wiele do wielu</input>  <br> 
+     <input type="checkbox" id="D3">D. jeden do zera</input> <br> 
+     <div id="guzik"><button id="sprawdz3">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 4</b><br><hr>
+    <p>Na obrazie przedstawiono wybór formatu pliku importującego bazę danych. Którego formatu należy użyć, jeżeli dane są wyeksportowane z programu Excel i zapisane tekstowo z zastosowaniem przecinka do rozdzielania wartości pól?</p>
+    <div id="img"><img src="bazy5.png"></div>
+     <input type="checkbox" id="A4">A. SQL</input> <br>
+     <input type="checkbox" id="B4">B. CSV</input>   <br>
+     <input type="checkbox" id="C4">C. XML</input>  <br> 
+     <input type="checkbox" id="D4">D. ESRI</input> <br> 
+     <div id="guzik"><button id="sprawdz4">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 5</b><br><hr>
+    <p>Obiekt bazy danych, którego głównym przeznaczeniem jest drukowanie lub wyświetlanie zestawień danych, to</p>
+     <input type="checkbox" id="A5">A. makro</input> <br>
+     <input type="checkbox" id="B5">B. raport</input>   <br>
+     <input type="checkbox" id="C5">C. moduł</input>  <br> 
+     <input type="checkbox" id="D5">D. formularz</input> <br> 
+     <div id="guzik"><button id="sprawdz5">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 6</b><br><hr>
+    <p>Struktura prostych baz danych, w których wszystkie dane są przechowywane w jednej tabeli, nazywana jest modelem</p>
+     <input type="checkbox" id="A6">A. sieciowym</input> <br>
+     <input type="checkbox" id="B6">B. relacyjnym</input>   <br>
+     <input type="checkbox" id="C6">C. jednorodnym</input>  <br> 
+     <input type="checkbox" id="D6">D. hierarchicznym</input> <br> 
+     <div id="guzik"><button id="sprawdz6">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 7</b><br><hr>
+    <p>W przedstawionym diagramie bazy danych biblioteka, elementy: czytelnik, wypozyczenie i ksiazka są</p>
+    <div id="img"><img src="bazy6.png" width="90%"></div>
+     <input type="checkbox" id="A7">A. atrybutami</input> <br>
+     <input type="checkbox" id="B7">B. krotkami</input>   <br>
+     <input type="checkbox" id="C7">C. encjami</input>  <br> 
+     <input type="checkbox" id="D7">D. polami</input> <br> 
+     <div id="guzik"><button id="sprawdz7">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 8</b><br><hr>
+    <p>W relacyjnym modelu baz danych krotkami nazywa się</p>
+     <input type="checkbox" id="A8">A. liczbę rekordów tabeli</input> <br>
+     <input type="checkbox" id="B8">B. wszystkie wiersze tabeli wraz z wierszem nagłówkowym</input>   <br>
+     <input type="checkbox" id="C8">C. wszystkie kolumny tabeli, które zawierają atrybuty obiektu</input>  <br> 
+     <input type="checkbox" id="D8">D. wiersze tabeli z wyjątkiem wiersza nagłówkowego, w którym umieszcza się nazwy kolumn</input> <br> 
+     <div id="guzik"><button id="sprawdz8">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 9</b><br><hr>
+    <p>Co można powiedzieć o normalizacji przedstawionej tabeli?</p>
+    <div id="img"><img src="bazy7.png" ></div>
+     <input type="checkbox" id="A9">A. tabela nie jest znormalizowana</input> <br>
+     <input type="checkbox" id="B9">B. tabela jest w trzeciej postaci normalnej</input>   <br>
+     <input type="checkbox" id="C9">C. tabela jest w drugiej postaci normalnej</input>  <br> 
+     <input type="checkbox" id="D9">D. Tabela jest w pierwszej postaci normalnej</input> <br> 
+     <div id="guzik"><button id="sprawdz9">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 10</b><br><hr>
+    <p>Wykonując raport w systemie obsługi relacyjnych baz danych, umożliwia się</p>
+     <input type="checkbox" id="A10">A. analizę wybranych danych</input> <br>
+     <input type="checkbox" id="B10">B. usuwanie danych w tabelach</input>   <br>
+     <input type="checkbox" id="C10">C. dodawanie danych w tabelach</input>  <br> 
+     <input type="checkbox" id="D10">D. aktualizowanie danych w tabelach</input> <br> 
+     <div id="guzik"><button id="sprawdz10">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 11</b><br><hr>
+    <p>Zdefiniowanie klucza obcego jest niezbędne do utworzenia</p>
+     <input type="checkbox" id="A11">A. transakcji</input> <br>
+     <input type="checkbox" id="B11">B. relacji 1..n</input>   <br>
+     <input type="checkbox" id="C11">C. relacji 1..1</input>  <br> 
+     <input type="checkbox" id="D11">D. klucza podstawowego</input> <br> 
+     <div id="guzik"><button id="sprawdz11">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 12</b><br><hr>
+    <p>Zgodnie z właściwościami ACID, dotyczącym wykonania transakcji, wymaganie trwałości (ang. durability) oznacza, że</p>
+     <input type="checkbox" id="A12">A. transakcja może być w pewnych warunkach podzielona na dwa niezależne etapy</input> <br>
+     <input type="checkbox" id="B12">B. w czasie wykonania transakcji dane mogą być modyfikowane przez inne transakcje</input>   <br>
+     <input type="checkbox" id="C12">C. w przypadku naruszenia spójności bazy danych transakcja usuwa tabele z kluczami obcymi</input>  <br> 
+     <input type="checkbox" id="D12">D. dane zatwierdzone przez transakcję powinny być dostępne niezależnie od tego, co się będzie działo po jej zakończeniu</input> <br> 
+     <div id="guzik"><button id="sprawdz12">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 13</b><br><hr>
+    <p>Którą relację w projekcie bazy danych należy ustalić między tabelami widocznymi na rysunku zakładając, że każdy klient sklepu internetowego dokona przynajmniej dwóch zamówień?</p>
+    <div id="img"><img src="bazy8.jpg" ></div>
+     <input type="checkbox" id="A13">A. analizę wybranych danych</input> <br>
+     <input type="checkbox" id="B13">B. usuwanie danych w tabelach</input>   <br>
+     <input type="checkbox" id="C13">C. dodawanie danych w tabelach</input>  <br> 
+     <input type="checkbox" id="D13">D. aktualizowanie danych w tabelach</input> <br> 
+     <div id="guzik"><button id="sprawdz13">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 14</b><br><hr>
+    <p>Formularz nadrzędny wykorzystywany do nawigacji w bazie danych pomiędzy dostępnymi w systemie formularzami, kwerendami jest nazywany formularzem</p>
+     <input type="checkbox" id="A14">A. głównym</input> <br>
+     <input type="checkbox" id="B14">B. sterującym</input>   <br>
+     <input type="checkbox" id="C14">C. pierwotnym</input>  <br> 
+     <input type="checkbox" id="D14">D. zagnieżdżonym</input> <br> 
+     <div id="guzik"><button id="sprawdz14">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 15</b><br><hr>
+    <p>Baza danych księgarni zawiera tabelę książki z polami: id, idAutor, tytul, ileSprzedanych oraz tabelę autorzy z polami: id, imie, nazwisko. Aby stworzyć raport sprzedanych książek z tytułami i nazwiskami autorów, należy</p>
+     <input type="checkbox" id="A15">A. stworzyć kwerendę wyszukującą tytuły książek</input> <br>
+     <input type="checkbox" id="B15">B. zdefiniować relację 1..n dla tabel książki i autorzy, a następnie stworzyć kwerendę łączącą obie tabele</input>   <br>
+     <input type="checkbox" id="C15">C. zdefiniować relację 1..1 dla tabel książki i autorzy, a następnie stworzyć kwerendę łączącą obie tabele</input>  <br> 
+     <input type="checkbox" id="D15">D. stworzyć dwie osobne kwerendy: pierwszą wyszukującą tytuły książek, drugą wyszukującą nazwiska autorów</input> <br> 
+     <div id="guzik"><button id="sprawdz15">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 16</b><br><hr>
+    <p>Na rysunku została przedstawiona relacja jeden do wielu. Łączy ona</p>
+    <div id="img"><img src="bazy9.png" ></div>
+     <input type="checkbox" id="A16">A. klucz obcy rezyserzy_id tabeli filmy z kluczem obcym id tabeli rezyserzy</input> <br>
+     <input type="checkbox" id="B16">B. klucz podstawowy id tabeli filmy z kluczem podstawowym id tabeli rezyserzy</input> <br>
+     <input type="checkbox" id="C16">C. klucz obcy rezyserzy_id tabeli filmy z kluczem podstawowym id tabeli rezyserzy</input>  <br> 
+     <input type="checkbox" id="D16">D. klucz podstawowy id tabeli filmy z kluczem obcym rezyserzy_id tabeli rezyserzy</input> <br> 
+     <div id="guzik"><button id="sprawdz16">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 17</b><br><hr>
+    <p>Wskaż poprawną zasadę dotyczącą spójności danych w bazie danych</p>
+     <input type="checkbox" id="A17">A. pole klucza obcego nie może być puste</input> <br>
+     <input type="checkbox" id="B17">B. pole klucza podstawowego nie może być puste</input>   <br>
+     <input type="checkbox" id="C17">C. pole klucza podstawowego musi posiadać utworzony indeks</input>  <br> 
+     <input type="checkbox" id="D17">D. w relacji 1..n pole klucza obcego jest połączone z polem klucza obcego innej tabeli</input> <br> 
+     <div id="guzik"><button id="sprawdz17">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 18</b><br><hr>
+    <p>W algebrze relacji operacja selekcji polega na</p>
+     <input type="checkbox" id="A18">A. wyeliminowaniu pustych wierszy</input> <br>
+     <input type="checkbox" id="B18">B. wybieraniu krotek spełniających określone warunki</input>   <br>
+     <input type="checkbox" id="C18">C. wybieraniu krotek niezawierających wartości NULL</input>  <br> 
+     <input type="checkbox" id="D18">D. wyeliminowaniu krotek z powtarzającymi się polami</input> <br> 
+     <div id="guzik"><button id="sprawdz18">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 19</b><br><hr>
+    <p>Relacja w bazach danych jest</p>
+     <input type="checkbox" id="A19">A. logicznym połączeniem tabel</input> <br>
+     <input type="checkbox" id="B19">B. kluczem głównym w relacji tabel</input>   <br>
+     <input type="checkbox" id="C19">C. algebraicznym połączeniem tabel</input>  <br> 
+     <input type="checkbox" id="D19">D. połączeniem dwóch pól jednej tabeli</input> <br> 
+     <div id="guzik"><button id="sprawdz19">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 20</b><br><hr>
+    <p>Wskaż poprawną kolejność etapów projektowania relacyjnej bazy danych</p>
+     <input type="checkbox" id="A20">A. selekcja, Określenie relacji, Określenie kluczy podstawowych tabel, Określenie zbioru danych</input> <br>
+     <input type="checkbox" id="B20">B. określenie relacji, Określenie kluczy podstawowych tabel, Selekcja, Określenie zbioru danych</input>   <br>
+     <input type="checkbox" id="C20">C. określenie kluczy podstawowych tabel, Określenie zbioru danych, Selekcja, Określenie relacji/input>  <br> 
+     <input type="checkbox" id="D20">D. określenie kluczy podstawowych tabel, Określenie zbioru danych, Selekcja, Określenie relacji</input> <br> 
+     <div id="guzik"><button id="sprawdz20">Sprawdź odpowiedź</button></div>
+</div>
+<div class="zadanie"><b>Pytanie 21</b><br><hr>
+    <p>Wskaż poprawną kolejność etapów projektowania relacyjnej bazy danych</p>
+     <input type="checkbox" id="A21">A. selekcja, Określenie relacji, Określenie kluczy podstawowych tabel, Określenie zbioru danych</input> <br>
+     <input type="checkbox" id="B21">B. określenie relacji, Określenie kluczy podstawowych tabel, Selekcja, Określenie zbioru danych</input>   <br>
+     <input type="checkbox" id="C21">C. określenie kluczy podstawowych tabel, Określenie zbioru danych, Selekcja, Określenie relacji/input>  <br> 
+     <input type="checkbox" id="D21">D. określenie kluczy podstawowych tabel, Określenie zbioru danych, Selekcja, Określenie relacji</input> <br> 
+     <div id="guzik"><button id="sprawdz21">Sprawdź odpowiedź</button></div>
+</div>
     
 </main>
 <div id="powrot"><a href="glowna.html">Na stronę główną</a></div>
